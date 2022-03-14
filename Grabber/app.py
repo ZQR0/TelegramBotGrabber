@@ -12,7 +12,7 @@ client = TelegramClient('Grabber', api_id, api_hash, retry_delay=3)
 @client.on(events.NewMessage(chats=channels_id))
 async def my_event_handler(event):
 
-    if event.message:
+    if (event.message):
         await client.send_message(my_channel_id, event.message)
 
 #Starting client
