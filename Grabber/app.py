@@ -1,9 +1,5 @@
 from telethon import TelegramClient, events
-from grabber_config import (
-    api_hash,
-    api_id, channels_id,
-    my_channel_id
-)
+from grabber_config import *
 
 #Client defination
 client = TelegramClient('Grabber', api_id, api_hash, retry_delay=3)
